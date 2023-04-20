@@ -28,4 +28,31 @@ const x = 'isActive';
 console.log('Esta vivo: ',personaje[x]);
 
 
+//MAS DETALLES
+
+delete personaje.daño;
+
+console.log(personaje);
+
+personaje.casado = true;
+
+const entriesPares = Object.entries(personaje);
+console.log(entriesPares);
+
+Object.freeze(personaje);
+personaje.dinero = 100000000000;
+console.log(personaje);
+
+const propiedades = Object.getOwnPropertyNames(personaje);
+const valores = Object.values(personaje);
+console.log(propiedades,valores);
+
+
+
+
+
+
+
+
+
 
