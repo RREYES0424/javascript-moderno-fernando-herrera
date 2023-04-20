@@ -15,3 +15,20 @@ const saludarFlecha = (nombre) => {
 }
 
 saludarFlecha('Ricardo');
+
+// const sumar = (a,b) => {
+//     return a + b;
+// }
+
+const sumar = (a,b) => a + b;
+
+console.log(sumar(1,2));
+
+// const getAleatorio = () => {
+//     return Math.random();
+// }
+
+const getAleatorio = () => Math.random();
+
+console.log(getAleatorio());
+
