@@ -29,3 +29,14 @@ console.log(false || false);
 
 console.log(regresaTrue() || regresaFalse());
 
+console.warn('Asignacion');
+const soyUndefined = undefined, 
+soyNull = null, 
+soyFalso = false, 
+a1 = true && 'Hola Mundo',
+a2 = 'Hola' && 'Mundo' && soyFalso && true,
+a3 = soyFalso || 'Ya no soy falso';
+
+console.log({a1,a2,a3});
+
+
