@@ -1,13 +1,23 @@
 class Persona{
+    static _conteo = 0;
+    static get conteo (){
+        return Persona._conteo + ' instancias';
+    }
+    static mensaje(){
+        console.log('Hola a todos, soy un metodo estatico');
+        
+    }
     nombre = '';
     edad = 0;
     pais = '';
     comida = '';
 
     constructor(nombre = 'Sin Nombre',edad = 'Sin edad',pais = 'Sin pais'){
-        this.nombre = nombre,
-        this.edad = edad,
-        this.pais = pais
+        this.nombre = nombre;
+        this.edad = edad;
+        this.pais = pais;
+        Persona._conteo ++;
+
     }
 
     set setComidaFavorita( comida ){        
@@ -33,3 +43,4 @@ ironman.presentar();
 ricardo.setComidaFavorita = 'Mole';
 ricardo.sexo = 'Masculino';
 console.log({ricardo});
+console.log(Persona.conteo);
